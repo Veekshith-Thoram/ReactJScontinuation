@@ -7,11 +7,21 @@ import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
 import ParentRef from './components/ParentRef';
 import FRParentRef from './components/FRParentRef';
+import PortalDemo from './components/PortalDemo';
+import Hero from './components/Hero';
+import ErrorBoundary from './components/ErrorBoundary';
+
 
 function App() {
   return (
     <div className="App">
-      <FRParentRef />
+      <ErrorBoundary>
+      <Hero heroName="Pushpa" />
+      <Hero heroName="Veekshith" />
+      <Hero heroName = "Joker" />
+      </ErrorBoundary>
+      {/* <PortalDemo /> */}
+      {/* <FRParentRef /> */}
       {/* <ParentRef /> */}
       {/* <RefsDemo /> */}
       {/* <ParentComp /> */}
