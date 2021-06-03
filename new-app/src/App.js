@@ -6,11 +6,13 @@ import Table from './components/Table';
 import ParentComp from './components/ParentComp';
 import RefsDemo from './components/RefsDemo';
 import ParentRef from './components/ParentRef';
+import FRParentRef from './components/FRParentRef';
 
 function App() {
   return (
     <div className="App">
-      <ParentRef />
+      <FRParentRef />
+      {/* <ParentRef /> */}
       {/* <RefsDemo /> */}
       {/* <ParentComp /> */}
       {/* <Table /> */}
